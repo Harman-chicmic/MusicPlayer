@@ -4,6 +4,7 @@ import com.example.dummySbrigit.Entities.Admin;
 import com.example.dummySbrigit.Entities.Uuid;
 import com.example.dummySbrigit.Services.AdminService;
 //import com.example.dummySbrigit.Services.UserService;
+import com.example.dummySbrigit.Services.DriversService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -21,10 +22,12 @@ import java.util.UUID;
 public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
     public final AuthenticationManager authenticationManager;
     public final AdminService adminService;
+    public final DriversService driversService;
 
-    public AuthenticationFilter(AuthenticationManager authenticationManager, AdminService adminService) {
+    public AuthenticationFilter(AuthenticationManager authenticationManager, AdminService adminService,DriversService driversService) {
         this.authenticationManager = authenticationManager;
         this.adminService = adminService;
+        this.driversService=driversService;
     }
 
 

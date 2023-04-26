@@ -6,6 +6,8 @@ import com.example.dummySbrigit.Services.AdminService;
 import com.example.dummySbrigit.Services.DriversService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -48,7 +50,18 @@ public class AppControllers {
                 .build();
         System.out.println("////////////" + user);
         driversService.saveUser(user);
+        driversService.register(user);
         return "driver created";
+    }
+    @PostMapping("/verify")
+    public ResponseEntity<String> verifyUser(@RequestParam String email, @RequestParam int otp) {
+        boolean isVerified = driversService.verify(email, otp);
+        System.out.println("verification");
+        if (isVerified) {
+            return ResponseEntity.ok("OTP verification successful");
+        } else {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid OTP");
+        }
     }
 //    @GetMapping("/")
 //    public String listObjects(Model model) {
@@ -84,6 +97,7 @@ public class AppControllers {
         driversService.UpdateDriversInUser(firstName,lastName,email,phone);
         return "User Updated!!!";
     }
+
 
 
 }

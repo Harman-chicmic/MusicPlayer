@@ -14,6 +14,7 @@ import java.util.List;
 public interface DriversRepo extends JpaRepository<Drivers,Long> {
 
     Drivers getUserByEmail(String email);
+    Drivers findByEmail(String email);
     Drivers getUserById(int id);
     @Override
     @Query("select e from Drivers e where e.deleted = false")

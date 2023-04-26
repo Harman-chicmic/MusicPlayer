@@ -37,5 +37,8 @@ public class Drivers {
     private String city;
     private boolean deleted;
     private boolean status;
+    int otp;
+    boolean otpVerified;
+
 
 }
