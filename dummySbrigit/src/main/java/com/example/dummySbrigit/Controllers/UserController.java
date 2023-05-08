@@ -223,4 +223,56 @@ public class UserController {
         model.addAttribute("sortBy", sortBy);
         return "drivers";
     }
+    @PostMapping("/addDriver")
+    public String Register(HttpServletRequest request) {
+        String fName = request.getParameter("fname");
+        String lName = request.getParameter("lname");
+        String email = request.getParameter("email");
+        String phNo =  request.getParameter("phone");
+        String password = request.getParameter("password");
+        String confirmPassword = request.getParameter("cnfPassword");
+        String city = request.getParameter("city");
+        String inviteCode = request.getParameter("inviteCode");
+//        if(!confirmPassword.equals(password)) {
+//            System.out.println("//////////////////" + "inside");
+//            return "error";
+//        }
+        Drivers user = Drivers.builder()
+                .firstName(fName)
+                .lastName(lName)
+                .email(email)
+                .phone(phNo)
+                .password(password)
+                .city(city)
+                .build();
+        System.out.println("////////////" + user);
+        driversService.saveUser(user);
+        driversService.register(user);
+        return "driverOtp";
+    }
+    @GetMapping("/verify")
+    public String verifyUser(@RequestParam String email, @RequestParam int otp, HttpServletRequest request) {
+//        boolean isVerified = driversService.verify(email, otp);
+//        System.out.println("verification");
+//        if (isVerified) {
+//            return "OTP verification successful";
+//        } else {
+//            return "Invalid OTP";
+//        }
+        request.getParameter("email");
+        request.getParameter("otp");
+        boolean isVerified = driversService.verify(email, otp);
+        System.out.println("verification");
+        if (isVerified) {
+            return "driverLogin";
+        } else {
+            return "Invalid OTP";
+        }
+    }
+    @GetMapping("/driverLogin")
+    public String driverLogin(HttpServletRequest request){
+        request.getParameter("username");
+        request.getParameter("password");
+        return "index";
+    }
 }

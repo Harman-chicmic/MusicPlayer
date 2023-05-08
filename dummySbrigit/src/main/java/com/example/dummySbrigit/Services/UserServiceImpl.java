@@ -4,6 +4,7 @@ import com.example.dummySbrigit.Entities.Admin;
 import com.example.dummySbrigit.Entities.Drivers;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.SneakyThrows;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -17,13 +18,13 @@ import java.util.Collection;
 
 @Service
 public class UserServiceImpl implements UserDetailsService {
-    private final BCryptPasswordEncoder bCryptPasswordEncoder;
-    private final AdminService adminService;
+   @Autowired BCryptPasswordEncoder bCryptPasswordEncoder;
+  @Autowired
+  AdminService adminService;
+    @Autowired
+    DriversService driversService;
 
-    public UserServiceImpl( AdminService adminService,BCryptPasswordEncoder bCryptPasswordEncoder) {
-        this.bCryptPasswordEncoder = bCryptPasswordEncoder;
-        this.adminService = adminService;
-    }
+
     public String getCurrentUrl(HttpServletRequest request){
         String url = request.getServletPath();
         return url;
@@ -52,12 +53,16 @@ public class UserServiceImpl implements UserDetailsService {
 //    }
         System.out.println("iiiii");
         com.example.dummySbrigit.Entities.Admin admin = adminService.getAdmin(email);
-        if (email==null || admin==null) {
+        Drivers drivers= driversService.getUser(email);
+        if (email==null || (admin==null && drivers==null)) {
             throw new UsernameNotFoundException("Username not found");
         }
         System.out.println(admin+"///");
         Collection<SimpleGrantedAuthority> authorities=new ArrayList<>();
-        return new User
-                (admin.getEmail(),admin.getPassword(), authorities);
+        if (admin !=null)
+        return new User(admin.getEmail(),admin.getPassword(), authorities);
+        else {
+            return new User(drivers.getEmail(),drivers.getPassword(), authorities);
+        }
     }
 }

@@ -59,7 +59,13 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
 
         adminService.CreateToken(uuidEntity);
-        String redirectUrl = "http://localhost:8081/dashboard";
+        String redirectUrl;
+        if (adminService.getUserByEmail(email) != null) {
+
+            redirectUrl = "/dashboard";
+        }else {
+            redirectUrl = "/driverLogin";
+        }
 //        response.addHeader("Authorization","Subham Kumar");
 
         new DefaultRedirectStrategy().sendRedirect(request,response,redirectUrl);

@@ -26,43 +26,18 @@ public class AppControllers {
         System.out.println("hello!!");
         return "hi";
     }
-    @PostMapping("/addDriver")
-    public String Register(HttpServletRequest request) {
-        String fName = request.getParameter("fname");
-        String lName = request.getParameter("lname");
-        String email = request.getParameter("email");
-        String phNo =  request.getParameter("phone");
-        String password = request.getParameter("password");
-        String confirmPassword = request.getParameter("cnfPassword");
-        String city = request.getParameter("city");
-        String inviteCode = request.getParameter("inviteCode");
-//        if(!confirmPassword.equals(password)) {
-//            System.out.println("//////////////////" + "inside");
-//            return "error";
+
+//    @PostMapping("/verify")
+//    public ResponseEntity<String> verifyUser(@RequestParam String email, @RequestParam int otp) {
+//        boolean isVerified = driversService.verify(email, otp);
+//        System.out.println("verification");
+//        if (isVerified) {
+//            return ResponseEntity.ok("OTP verification successful");
+//        } else {
+//            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid OTP");
 //        }
-        Drivers user = Drivers.builder()
-                .firstName(fName)
-                .lastName(lName)
-                .email(email)
-                .phone(phNo)
-                .password(password)
-                .city(city)
-                .build();
-        System.out.println("////////////" + user);
-        driversService.saveUser(user);
-        driversService.register(user);
-        return "driver created";
-    }
-    @PostMapping("/verify")
-    public ResponseEntity<String> verifyUser(@RequestParam String email, @RequestParam int otp) {
-        boolean isVerified = driversService.verify(email, otp);
-        System.out.println("verification");
-        if (isVerified) {
-            return ResponseEntity.ok("OTP verification successful");
-        } else {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid OTP");
-        }
-    }
+//    }
+
 //    @GetMapping("/")
 //    public String listObjects(Model model) {
 //        List<Drivers> drivers = driversService.allDrivers();
@@ -97,6 +72,7 @@ public class AppControllers {
         driversService.UpdateDriversInUser(firstName,lastName,email,phone);
         return "User Updated!!!";
     }
+
 
 
 

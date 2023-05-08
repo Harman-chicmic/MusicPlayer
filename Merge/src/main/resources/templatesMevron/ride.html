@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Mevron - Ride</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<!-- Bootstrap CSS-->	
+<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+<!-- Font Awesome CSS-->
+<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">    
+<!-- Animation CSS-->
+<link rel="stylesheet" href="css/animate.css">
+<!-- theme stylesheet-->
+<link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+<!-- Custom stylesheet - for your changes-->
+<link rel="stylesheet" href="css/style.css">
+<!-- Favicon-->
+<link rel="shortcut icon" href="img/favicon.png">
+<!-- Tweaks for older IEs--><!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<body>
+	<main>
+		<!-- navbar-->
+		<header class="header position-fixed w-100">
+		  <nav class="navbar navbar-expand-lg">
+			<div class="container">
+				<a href="index.html" class="navbar-brand"><img src="img/front/mevron_logo.png" alt="" class="img-fluid"></a>
+				
+				<div class="nav align-items-center"> 
+					<a href="#" class="nav-item">Help </a> 				
+					<div class="dropdown-user ml-0 ml-sm-3">
+						<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Adrian</a>
+						<div class="dropdown-menu">
+							<a href="book-ride.html" class="dropdown-item">Request a Ride</a>
+							<a href="rider-profile.html" class="dropdown-item">Profile Setting</a>
+							<a href="index.html" class="dropdown-item">Logout</a>
+						</div>
+					</div>
+				</div>				
+			</div>
+			
+		  </nav>
+		  
+		</header>
+		<!-- End Header -->
+		
+		<div class="map_location">
+			<img src="img/map_location.jpg" alt="">	
+		</div><!-- End map_location -->
+		
+				 
+			<div class="container">
+				
+				<div class="rider_detial pt-5">
+					<div class="row pt-5 row-eq-height">
+						<div class="col-lg-6 bg-light-grey d-flex align-items-center book_header">
+							<form action="" class="w-100">
+								<div class="location_ride">
+									<div class="form-group">
+										<div class="input-group">
+										   <div class="input-group-prepend"><i class="fa fa-home"></i></div>
+										   <input type="text" name="droff_location" id="pic_location" class="form-control" placeholder="11A Idejo Street , Off Adeola Odeku...">
+										</div>
+									</div>
+									<div class="form-group m-0">
+										<div class="input-group">
+										   <div class="input-group-prepend"><i class="fa fa-map-pin"></i></div>
+										   <input type="text" name="droff_location" id="droff_location" class="form-control" placeholder="859, Bishop Aboyade Street, Victoria...">
+										</div>
+									</div>
+								</div>
+							</form>
+						</div><!-- End  -->	
+						
+						<div class="col-lg-6 bg-white">
+							<div class="driver_info">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="driver_detail mb-3 position-relative">
+											<figure class="rounded-circle"><img src="img/dashboard/driver_pic.jpg" alt="profile_pic"></figure>
+											<h5 class="text-capitalize m-0">Jacek Janiczak <i class="mark_fav ml-1 fa fa-heart"></i></h5>
+											<span class="rated"><i class="fa fa-star"></i> 4.7</span>
+											<a href="callto:+234 01 230 0085" class="a-default d-block">+234 01 230 0085</a>
+										</div>									
+									</div>
+									<div class="col-md-6">
+										<div class="mb-3 d-flex flex-direction-row justify-content-md-end car_model">
+											<figure><img src="img/car_icon.png" alt=""></figure>
+											<div class="text-left pl-3">
+												<h5 class="m-0">Mevron X</h5>
+												<span>LSR - 841AL </span>
+												<div class="fav-dropdown">
+													<a href="#" class="d-block" data-toggle="dropdown">Favourite Drivers <i class="fa fa-angle-right"></i></a>
+													<div class="dropdown-menu">
+														<a class="dropdown-item" href="#">
+															<h6 class="text-capitalize m-0">Jacek Janiczak <i class="float-right fa fa-heart"></i></h6>
+															<span class="rated"><i class="fa fa-star"></i> 4.7</span>
+														</a>
+														<a class="dropdown-item" href="#">
+															<h6 class="text-capitalize m-0">Jacek Janiczak <i class="float-right fa fa-heart"></i></h6>
+															<span class="rated"><i class="fa fa-star"></i> 4.7</span>
+														</a>
+														<a class="dropdown-item" href="#">
+															<h6 class="text-capitalize m-0">Jacek Janiczak <i class="float-right fa fa-heart"></i></h6>
+															<span class="rated"><i class="fa fa-star"></i> 4.7</span>
+														</a>
+														<a class="dropdown-item" href="#">
+															<h6 class="text-capitalize m-0">Jacek Janiczak <i class="float-right fa fa-heart"></i></h6>
+															<span class="rated"><i class="fa fa-star"></i> 4.7</span>
+														</a>
+														<a class="dropdown-item" href="#">
+															<h6 class="text-capitalize m-0">Jacek Janiczak <i class="float-right fa fa-heart"></i></h6>
+															<span class="rated"><i class="fa fa-star"></i> 4.7</span>
+														</a>
+													</div>
+												</div>	
+											</div>
+										</div>	
+									</div>
+								</div>
+								
+								<div class="group-btns d-flex flex-column flex-md-row justify-content-md-between mt-2">
+									<button class="btn btn-lg btn-danger mt-1" data-toggle="modal" data-target="#sos-services">SOS</button>
+									<div class="socialHolder">
+										<button class="btn btn-lg btn-bordered mt-1" data-toggle="dropdown">Share Details</button>
+										<ul class="dropdown-menu py-2">
+											<li class="">
+												<a data-original-title="Twitter" rel="tooltip"  href="#" class="btn btn-twitter d-block text-left" data-placement="left">
+													<i class="fa fa-twitter"></i> Twitter
+												</a>
+											</li>
+											<li>
+												<a data-original-title="Facebook" rel="tooltip"  href="#" class="btn btn-facebook d-block text-left" data-placement="left">
+													<i class="fa fa-facebook"></i> Facebook
+												</a>
+											</li>					
+											<li>
+												<a data-original-title="Google+" rel="tooltip"  href="#" class="btn btn-google d-block text-left" data-placement="left">
+													<i class="fa fa-google-plus"></i> Google Plus
+												</a>
+											</li>
+											<li>
+												<a data-original-title="LinkedIn" rel="tooltip"  href="#" class="btn btn-linkedin d-block text-left" data-placement="left">
+													<i class="fa fa-linkedin"></i> LinkedIn
+												</a>
+											</li>											
+										</ul>
+									</div>
+									<button class="btn btn-lg btn-bordered mt-1" data-toggle="modal" data-target="#cancel_ride">Cancel Ride</button>
+								</div>
+								
+								<hr/>
+								
+								<div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+									<span>Estimated cost: <strong>₦200</strong></span>
+									<button class="btn btn-sm btn-bordered my-2 my-sm-0 tip_driver" data-toggle="modal" data-target="#add_tip">Tip to Driver</button>
+									<div class="payment_type mt-0" data-toggle="modal" data-target="#confirmation_payment">
+										<label><i><img src="img/cash_icon.png" alt=""></i> Cash</label>
+										<span class="pl-3"><img src="img/dropdown_arrow.png" alt=""></span>
+									</div>
+								</div>
+								
+							</div>
+						</div>	
+					</div>
+				</div>					 
+			
+			</div> 
+
+	</main>	
+	
+	<!----------
+		Modal's
+	------------------------>
+	
+	<!-- Start Payment Modal -->
+	<div class="modal fade" id="confirmation_payment" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+		<div class="modal-content">		  
+			<button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+
+			<div class="modal-body p-5">
+				<h4 class="text-center mb-4 mb-sm-4">Are you sure you want to change payment option?</h4>
+				<div class="text-center">	
+					<button type="button" class="btn btn-lg btn-cancel m-1" data-dismiss="modal" aria-label="Close">NO</button>
+					<button type="button" class="btn btn-lg btn-primary hide-modal m-1" data-toggle="modal" data-target="#payment_type">Yes</button>
+				</div>				
+			</div>		  
+		</div>
+	  </div>	
+	</div>
+	<!-- End payment Confirmation Modal -->
+	
+	<!-- Start Payment Modal -->
+	<div class="modal fade" id="payment_type" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+		<div class="modal-content">		  
+			<button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+
+			<div class="modal-body p-5">
+				<h4 class="text-center mb-5 mb-sm-5">Choose Payment method</h4>
+				<form action="">
+					<div class="row mb-3 mb-sm-4">
+						<div class="col-md-6 mt-1">
+							<label class="select_chk">
+								Cash
+								<input type="radio" id="cash" name="customRadio" checked="checked">
+								<span class="checkmark" value="cash"></span>
+							</label>
+						</div>						
+					
+						<div class="col-md-6 mt-1">
+							<label class="select_chk">
+								Credit Card
+								<input type="radio" id="Creditc" name="customRadio">
+								<span class="checkmark" value="Creditc"></span>
+							</label>
+						</div>						
+					</div>
+					<div class="text-center">	
+						<button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#add_payment">Add payment Method</button>
+					</div>				
+				</form>
+			</div>		  
+		</div>
+	  </div>	
+	</div>
+	<!-- End Payment Modal -->
+	
+	<!-- Start Add Payment Modal -->
+	<div class="modal fade" id="add_payment" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+		<div class="modal-content">		  
+			<button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+
+			<div class="modal-body p-5">
+				<h4 class="text-center mb-4 mb-sm-5">Select Payment Method</h4>
+				<form action="">
+					<div class="row mb-4 mb-sm-4">
+						<div class="col-md-6">
+							<label class="select_chk">
+								Paytm
+								<input type="radio" id="pa" name="customRadio">
+								<span class="checkmark" value="pa"></span>
+							</label>
+						</div>						
+					
+						<div class="col-md-6">
+							<label class="select_chk">
+								Mevron Gift Card
+								<input type="radio" id="cm" name="customRadio">
+								<span class="checkmark" value="cm"></span>
+							</label>
+						</div>						
+					</div>
+					<div class="row mb-4 mb-sm-4">
+						<div class="col-md-6">
+							<label class="select_chk">
+								Credit Card
+								<input type="radio" id="Card" name="customRadio">
+								<span class="checkmark" for="Card"></span>
+							</label>
+						</div>						
+					
+						<div class="col-md-6">
+							<label class="select_chk">
+								Debit Card
+								<input type="radio" id="debit" name="customRadio">
+								<span class="checkmark" for="debit"></span>
+							</label>
+						</div>						
+					</div>
+					<div class="text-center">	
+						<button type="button" class="btn btn-lg btn-primary">Add Payment Method</button>
+					</div>				
+				</form>
+			</div>		  
+		</div>
+	  </div>	
+	</div>
+	<!-- End Add Payment Modal -->
+
+	<!-- Start Cancel Ride Modal -->
+	<div class="modal fade" id="cancel_ride" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+		<div class="modal-content">		  
+			<button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+
+			<div class="modal-body p-5">
+				<h4 class="text-center mb-4 mb-sm-4">Are you sure you want cancel this ride?</h4>
+				<div class="text-center">	
+					<button type="button" class="btn btn-lg btn-cancel m-1" data-dismiss="modal" aria-label="Close">NO</button>
+					<button type="button" class="btn btn-lg btn-primary hide-modal m-1" data-toggle="modal" data-target="#">Yes</button>
+				</div>				
+			</div>		  
+		</div>
+	  </div>	
+	</div>
+	<!-- End Cancel Modal -->
+	
+	<!-- Start SOS Service Modal -->
+	<div class="modal fade" id="sos-services" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+		<div class="modal-content">		  
+			<button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+
+			<div class="modal-body p-5">
+				<h4 class="text-center mb-4 mb-sm-4">Are you sure you want to use SOS service?</h4>
+				<div class="text-center">	
+					<button type="button" class="btn btn-lg btn-cancel m-1" data-dismiss="modal" aria-label="Close">Cancel</button>
+					<button type="button" class="btn btn-lg btn-primary hide-modal m-1" data-toggle="modal" data-target="#">Yes, I’m sure</button>
+				</div>				
+			</div>		  
+		</div>
+	  </div>	
+	</div>
+	<!-- End SOS Service Modal -->
+	
+	<!-- Start Add a Tip Modal -->
+	<div class="modal fade" id="add_tip" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+		<div class="modal-content">		  
+			<button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+
+			<div class="modal-body p-5">
+				<h4 class="text-center mb-4 mb-sm-5">Add a Tip for Jacek</h4>
+				<form action="">
+					<div class="row mb-4 mb-sm-4">
+						<div class="col-md-4">
+							<label class="select_chk">
+								₦5
+								<input type="radio" id="n5" name="customRadio" checked="checked">
+								<span class="checkmark" for="n5"></span>
+							</label>
+						</div>						
+					
+						<div class="col-md-4">
+							<label class="select_chk">
+								₦10
+								<input type="radio" id="n10" name="customRadio">
+								<span class="checkmark" for="n10"></span>
+							</label>
+						</div>		
+						
+						<div class="col-md-4">
+							<label class="select_chk">
+								₦15
+								<input type="radio" id="Card" name="customRadio">
+								<span class="checkmark" for="n15"></span>
+							</label>
+						</div>	
+					</div>
+					
+					<div class="row">
+						<div class="col-md-8 offset-md-2">
+							<div class="form-group">
+								<input type="text" placeholder="Enter custom amount" class="form-control rounded-0">
+							</div> 
+						</div>
+					</div>
+					
+					<div class="text-center">	
+						<button type="button" class="btn btn-lg btn-cancel m-1" data-dismiss="modal" aria-label="Close">Cancel</button>
+						<button type="button" class="btn btn-lg btn-primary hide-modal m-1" data-toggle="modal" data-target="#payment-done">Pay Now</button>
+					</div>				
+				</form>
+			</div>		  
+		</div>
+	  </div>	
+	</div>
+	<!-- End Add a Tip Modal -->
+	
+	<!-- Start Payment Done -->
+	<div class="modal fade" id="payment-done" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+		<div class="modal-content">		  
+			<button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+
+			<div class="modal-body p-5 text-center">
+				<h4 class="text-center mb-4 mb-sm-4">Payment is done!</h4>
+				<p>This amount will add with your next trip.</p>
+				<div class="text-center mt-4">	
+					<button type="button" class="btn btn-lg btn-primary" data-dismiss="modal" aria-label="Close">DISMISS</button>
+				</div>				
+			</div>		  
+		</div>
+	  </div>	
+	</div>
+	<!-- End SOS Service Modal -->
+	
+	<!-- Start Trip Completed -->
+	<div class="modal fade"id="trip-completed" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+		<div class="modal-content">		  
+			<button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+
+			<div class="modal-body p-5">
+				<h4 class="text-center mb-4">Your Receipt</h4>
+				 
+				<div class="total_price w-100 d-block text-center mb-4"> 
+					<span>September 8, 2018 at 11:30 am</span>
+					<h4 class="h2">₦200</h4>
+				</div>	
+				 
+				<div class="row"> 
+					<div class="col-md-7 text-center">
+						<div class="rec_info">
+							<figure class="rounded-circle"><img src="img/dashboard/driver_pic.jpg" alt="pic"></figure>
+							<span class="u_name">Jacek Janiczak</span>
+						</div>
+					</div>
+					<div class="col-md-5 text-center">
+						<div class="rec_info">
+							<figure><img src="img/dashboard/car_info.png" alt="car" class="img-fluid"></figure>
+							<span class="u_name">Mevron X</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row mt-4">
+					<div class="col-md-7 text-center">
+						<div class="rating text-center">
+							<span class="mr-2">Rating</span>
+							<input type="radio" id="star6" name="rating" value="6"/><label for="star6" title="Meh">1 star</label>
+							<input type="radio" id="star7" name="rating" value="7" checked="checked"/><label for="star7" title="Pretty good">2 stars</label>
+							<input type="radio" id="star8" name="rating" value="8" /><label for="star8" title="Pretty good">3 stars</label>
+							<input type="radio" id="star9" name="rating" value="9" /><label for="star9" title="Rocks!">4 stars</label>
+							<input type="radio" id="star10" name="rating" value="10" /><label for="star10" title="Rocks!">5 stars</label>
+						</div>
+					</div>
+					<div class="col-md-5 text-center">
+						<span class="font-weight-bold">Good</span>
+					</div>
+				</div>	
+								 
+				<hr class="grey_hr"/>
+				
+				<div class="add_trip my-4 d-block">
+					<h6 class="text-center mb-4">Add a tip to Driver</h6>
+					
+					<div class="row mb-3 mb-sm-3">
+						<div class="col-md-4 mt-1">
+							<label class="select_chk">
+								₦5
+								<input type="radio" id="n5" name="customRadio" checked="checked">
+								<span class="checkmark" for="n5"></span>
+							</label>
+						</div>						
+					
+						<div class="col-md-4 mt-1">
+							<label class="select_chk">
+								₦10
+								<input type="radio" id="n10" name="customRadio">
+								<span class="checkmark" for="n10"></span>
+							</label>
+						</div>		
+						
+						<div class="col-md-4 mt-1">
+							<label class="select_chk">
+								₦15
+								<input type="radio" id="Card" name="customRadio">
+								<span class="checkmark" for="n15"></span>
+							</label>
+						</div>	
+					</div>
+				</div>	
+				
+				<div class="text-center mt-1">	
+					<button type="button" class="btn btn-lg btn-cancel m-1" data-dismiss="modal" aria-label="Close">I’ll do it later</button>
+					<button type="button" class="btn btn-lg btn-primary hide-modal m-1">Submit</button>
+				</div>				
+			</div>		  
+		</div>
+	  </div>	
+	</div>
+	<!-- End Trip Completed -->
+	
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- Animate JS -->
+    <script src="vendor/wow/wow.min.js"></script>
+	<!-- Custom JS -->
+    <script src="js/custom.js"></script>
+	
+</body>
+</html>

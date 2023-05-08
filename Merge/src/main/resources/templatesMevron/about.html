@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head th:replace="fragment :: headhtml">
+
+</head>
+<body>
+	<main>
+		<!-- navbar-->
+		<header class="header">
+		  <div th:replace="fragment :: navbar_html3"></div>
+		  
+			<!-- Start Signin Modal -->
+			<div th:replace="fragment :: signinmodal"></div>
+			<!-- End Signup Modal -->
+			
+			
+			<!-- Start Login Modal -->
+			<div class="sign_sec modal_login">
+				<div class="container">
+					
+					<div class="front-sign-sec">
+						<div class="close-login">
+							<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"><title>Navigation close menu</title><path d="M21.1 5.1l-2.2-2.2-6.9 7-6.9-7-2.2 2.2 7 6.9-7 6.9 2.2 2.2 6.9-7 6.9 7 2.2-2.2-7-6.9 7-6.9z" fill="currentColor"></path></svg>
+						</div>
+						
+						<a href="/driver-login" class="box bg-white d-inline-block text-left">
+							<h2>Drive Login</h2>
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="32px"> <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M44.352,31.519 C43.676,32.161 42.612,32.161 41.936,31.519 C41.283,30.898 41.283,29.866 41.936,29.248 L54.187,17.614 L1.715,17.614 C0.773,17.614 -0.000,16.903 -0.000,16.008 C-0.000,15.113 0.773,14.379 1.715,14.379 L54.187,14.379 L41.936,2.767 C41.283,2.125 41.283,1.091 41.936,0.473 C42.612,-0.169 43.676,-0.169 44.352,0.473 L59.504,14.860 C60.157,15.481 60.157,16.513 59.504,17.131 L44.352,31.519 Z"></path></svg>
+						</a>
+						<a href="/rider-login" class="box bg-gold d-inline-block text-left">
+							<h2>Rider Login</h2>
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="32px"> <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M44.352,31.519 C43.676,32.161 42.612,32.161 41.936,31.519 C41.283,30.898 41.283,29.866 41.936,29.248 L54.187,17.614 L1.715,17.614 C0.773,17.614 -0.000,16.903 -0.000,16.008 C-0.000,15.113 0.773,14.379 1.715,14.379 L54.187,14.379 L41.936,2.767 C41.283,2.125 41.283,1.091 41.936,0.473 C42.612,-0.169 43.676,-0.169 44.352,0.473 L59.504,14.860 C60.157,15.481 60.157,16.513 59.504,17.131 L44.352,31.519 Z"></path></svg>
+						</a>
+					</div>					
+				</div>
+			</div>		
+			<!-- End Login Modal -->
+		</header>
+		<!-- End Header -->
+		
+		<div class="layout_fixed">
+		
+			<div class="d-flex align-items-end flex-column inner_banner">
+					
+				<figure class="m-0 w-100"><img src="img/about/about_banner.jpg" class="img-fluid" alt=""></figure>
+				
+				<div class="box_watch wow fadeInUp" data-wow-delay="0.4s">
+					<div class="stories_box title_inner bg-gold py-4 px-4 px-sm-5">
+						<div class="titleB">
+							<h3 class="text-left d-inline-block my-4">About Us</h3>
+						</div>						
+					</div><!-- End Title Box -->
+				</div>
+			</div><!-- Front Banner -->
+			
+			<section class="d-flex align-items-center privacy_banner bg-gold py-4">
+				<div class="container">			
+					<div class="row ">			
+						<div class="col-12">	
+							<div class="text-black">
+								<h2 class="h1 font-weight-bold">Built for You</h2>
+							</div>
+							<p class="m-0 w-75">Mevron was built to offer the most efficient on-demand transportation options. It was formed to give drivers more control over their earnings. It was designed to offer riders, businesses, and everyone else more flexibility, freedom, safety, and security along every mile. There are many ways to move, but only one way to Mevron.</p>
+						</div>
+					</div>	
+				</div>	
+			</section>
+								
+			<!-- Start CEO Section-->
+			<section class="story-sec my-lg-4 my-5 py-lg-5">
+				<div class="row align-items-center no-gutters">
+					<div class="col-lg-7 story_pic ml-auto">
+						<figure><img src="img/about/ceo_img.jpg" class="img-fluid" alt=""></figure>
+					</div>
+				
+					<div class="box_watch">
+						<div class="stories_box bg-gold px-5 py-5">
+							<div class="titleB">
+								<h3 class="text-left d-inline-block">Join Our Family</h3>
+							</div>
+							<summary class="pt-lg-0">		
+								<p>We’re not merely a company; we’re family. We believe everyone who joins the Mevron movement is critical to our success - from our operations team to the drivers who move the world, to the riders and businesses that depend on our valuable services. Become a part of this growing, family-oriented revolution.</p>								
+								<hr/>																
+								<a href="/signup-driver" class="btn btn-primary btn-secondary mt-3 text-uppercase">SIGN UP to drive</a>
+							</summary>
+						</div><!-- End Stories Box -->
+					</div>					
+				</div>				
+			</section><!-- End CEO Section-->	
+
+			<section class="ride_sec bg-black overflow-hidden">
+				<div class="row align-items-center">
+					<div class="col-lg-6 cl-md-12 pr-md-0">
+						<figure><img src="img/about/ride_pic.jpg" alt="" class="img-fluid w-100"></figure>
+					</div>
+					<div class="col-lg-6 cl-md-12 text-white px-sm-5 pad_rht">
+						<div class="p-5 text-left">
+							<div class="titleB grey_bar">
+								<h3 class="text-left text-white d-inline-block">More Than a Ride</h3>
+							</div>	
+							<p>We help move the world, getting people where they want to go. But we’re more than just rides … we’re a complete transportation logistics company. We provide transport options for food, packages, and much more. Mevron is growing. Come grow with us.</p>													
+						</div>
+					</div>
+				</div>
+				
+				<div class="row align-items-center flex-row-reverse">	
+					<div class="col-lg-6 cl-md-12 pl-md-0">
+						<figure><img src="img/about/rider-safety.jpg" alt="" class="img-fluid w-100"></figure>
+					</div>
+					<div class="col-lg-6 cl-md-12 text-white px-sm-5 pad_lft">
+						<div class="p-5 py-5 text-left">
+							<div class="titleB grey_bar">
+								<h3 class="text-left text-white d-inline-block">A World in Motion</h3>
+							</div>	
+							<p>Cities with accessible and affordable transportation options are cities on the move. Cities on the move grow and with it the potential of each and every citizen. At Mevron, we’re committed to providing the best transportation option for individuals and businesses as well as great earning potential for our committed drivers.</p>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			<!-- End Rides -->
+			
+			<!-- <section class="c_info grap_bg py-5">
+				<div class="container">
+					<div class="row mb-4">
+						<div class="col-md-12">
+							<div class="titleB text-center grey_bar">
+								<h2 class="text-white d-inline-block">Company info</h2>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">									
+						<div class="col-md-6 text-white px-5 py-3 text-left">		
+							<figure class="mb-5"><img src="img/about/c1_pic.jpg" alt="" class="img-fluid shadow-lg"></figure>
+							<summary>
+								<div class="titleD mt-4">
+									<h4 class="text-left text-white d-inline-block">Who's driving Uber</h4>
+								</div>	
+								<p>Transportation isn’t the only thing we’re changing through our technology. We’re building a culture within Uber that emphasizes doing the right thing, period, for riders, drivers, and employees. Find out more about the team that’s leading the way.</p>						
+								<a href="#" class="a-default">Learn more <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="15px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M19.207,13.820 C18.914,14.102 18.453,14.102 18.161,13.820 C17.878,13.549 17.878,13.097 18.161,12.826 L23.466,7.734 L0.743,7.734 C0.335,7.734 -0.000,7.422 -0.000,7.030 C-0.000,6.639 0.335,6.317 0.743,6.317 L23.466,6.317 L18.161,1.234 C17.878,0.953 17.878,0.501 18.161,0.230 C18.453,-0.051 18.914,-0.051 19.207,0.230 L25.768,6.528 C26.051,6.800 26.051,7.251 25.768,7.522 L19.207,13.820 Z"></path></svg></a>	
+							</summary>							
+						</div>
+						
+						<div class="col-md-6 text-white px-5 py-3 text-left">		
+							<figure class="mb-5"><img src="img/about/c1_pic.jpg" alt="" class="img-fluid shadow-lg"></figure>
+							<summary>
+								<div class="titleD mt-4">
+									<h4 class="text-left text-white d-inline-block">Getting diversity right</h4>
+								</div>	
+								<p>It’s our goal to create a workplace that is inclusive and reflects the diversity of the cities we serve—where everyone can be their authentic self, and where that authenticity is celebrated as a strength. By creating an environment where people from every background can thrive, we’ll make Uber a better company—for our employees and our customers.</p>						
+								<a href="#" class="a-default">Learn more <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="15px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M19.207,13.820 C18.914,14.102 18.453,14.102 18.161,13.820 C17.878,13.549 17.878,13.097 18.161,12.826 L23.466,7.734 L0.743,7.734 C0.335,7.734 -0.000,7.422 -0.000,7.030 C-0.000,6.639 0.335,6.317 0.743,6.317 L23.466,6.317 L18.161,1.234 C17.878,0.953 17.878,0.501 18.161,0.230 C18.453,-0.051 18.914,-0.051 19.207,0.230 L25.768,6.528 C26.051,6.800 26.051,7.251 25.768,7.522 L19.207,13.820 Z"></path></svg></a>	
+							</summary>							
+						</div>
+					</div>
+				</div>	
+			
+			</section> -->
+			<!-- End Rides -->
+			
+			<!-- <section class="bg-black">									
+				<div class="ang_sec py-5">
+					<div class="container">		
+						<div class="row px-3 px-md-5">
+							
+							<div class="col-md-6 px-sm-6 py-3 text-white">
+								<i class="d-block"><img src="img/front/newsroom_icon.svg" alt=""></i>
+								<h4 class="d-inline-block font-weight-bold">Newsroom</h4>
+								<p>Get announcements about partnerships, app updates, initiatives, and more near you and around the world.</p>
+								<a href="#" class="a-default">Learn more <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="15px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M19.207,13.820 C18.914,14.102 18.453,14.102 18.161,13.820 C17.878,13.549 17.878,13.097 18.161,12.826 L23.466,7.734 L0.743,7.734 C0.335,7.734 -0.000,7.422 -0.000,7.030 C-0.000,6.639 0.335,6.317 0.743,6.317 L23.466,6.317 L18.161,1.234 C17.878,0.953 17.878,0.501 18.161,0.230 C18.453,-0.051 18.914,-0.051 19.207,0.230 L25.768,6.528 C26.051,6.800 26.051,7.251 25.768,7.522 L19.207,13.820 Z"/></svg></a>
+							</div>
+							
+							<div class="col-md-6 px-sm-6 py-3 text-white">
+								<i class="d-block"><img src="img/investor_icon.svg" alt=""></i>
+								<h4 class="d-inline-block font-weight-bold">Investor Relations</h4>
+								<p>Download financial reports, see next-quarter plans, and read about our corporate responsibility initiatives.</p>
+								<a href="#" class="a-default">Learn more <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="15px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M19.207,13.820 C18.914,14.102 18.453,14.102 18.161,13.820 C17.878,13.549 17.878,13.097 18.161,12.826 L23.466,7.734 L0.743,7.734 C0.335,7.734 -0.000,7.422 -0.000,7.030 C-0.000,6.639 0.335,6.317 0.743,6.317 L23.466,6.317 L18.161,1.234 C17.878,0.953 17.878,0.501 18.161,0.230 C18.453,-0.051 18.914,-0.051 19.207,0.230 L25.768,6.528 C26.051,6.800 26.051,7.251 25.768,7.522 L19.207,13.820 Z"/></svg></a>
+							</div>
+							
+						</div>
+					</div>
+				</div>			
+			</section> -->
+			
+		</div><!-- End layout_fixed -->
+		
+		<div class="clearfix"></div>
+		
+		<footer class="main-footer">
+		  <div class="container">
+			<div class="row">
+				<div class="col-lg-5 d-flex align-items-center">					
+					<div class="available-device">					
+						<h2 class="footer-heading">Go mobile for your smartphone.</h2>
+						<p class="w-100 my-4">Install the Mevron app on Android or iOS.</p>
+						<div class="store_btn w-100">
+							<a href="#" class="d-inline-block"><img src="img/play_store.png" alt=""></a>
+							<a href="#" class="d-inline-block my-2 mr-2"><img src="img/app_store.png" alt=""></a>
+						</div>					
+					</div>					
+				</div>
+				
+				<div class="col-lg-2 col-md-4 col-sm-6 offset-lg-1">
+					<h6>Our Products</h6>
+					<ul class="list-unstyled m-0">
+					  <li><a href="#">Drive</a></li>
+					  <li><a href="#">Ride</a></li>
+					  <li><a href="#">Bike</a></li>
+					  <li><a href="#">Trike</a></li>
+					  <li><a href="#">Eat</a></li>
+					  <li><a href="#">Freight</a></li>
+					  <li><a href="#">Charter</a></li>
+					  <li><a href="#">Bus</a></li>
+					  <!-- <li><a href="#">Transit</a></li> -->
+					  <li><a href="#">Business</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<h6>About Us</h6>
+					<ul class="list-unstyled m-0">
+					  <li><a href="#">Newsroom</a></li>
+					  <li><a href="#">Global Community</a></li>
+					  <li><a href="safety.html">Safety</a></li>					  			  
+					</ul>
+				</div>
+				
+				<div class="col-lg-2 col-md-4">
+					<h6>contact Us</h6>
+					<ul class="list-unstyled m-0">
+					  <li><a href="#">Help Center</a></li>
+					  <li><a href="#">Get in touch with us via email</a></li>
+					  <li><a href="mailto:info@mevron.com" class="link">info@mevron.com</a></li>
+					  <li>
+						<ul class="list-unstyled social_links m-0">
+							<li><a href="#"><img src="img/fb_icon.png" alt="Facebook"></a></li>
+							<li><a href="#"><img src="img/twt_icon.png" alt="Twitter"></a></li>
+							<li><a href="#"><img src="img/in_icon.png" alt="Linked in"></a></li>
+							<li><a href="#"><img src="img/tube_icon.png" alt="Youtube"></a></li>
+							<li><a href="#"><img src="img/insta_icon.png" alt="Instagram"></a></li>
+						</ul>						
+					  </li>		  
+					</ul>
+				</div>
+			 
+			</div>
+		  </div>		  
+		</footer>
+
+	</main>
+	
+	<!-- Modal-video
+	<div class="modal fade video_modal" id="story-video" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		<div class="modal-content">		  
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	
+		  <div class="modal-body ">
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/zKL5FuZia-E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>		  
+		  </div>		  
+		</div>
+	  </div>
+	</div-->
+	
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- Animate JS -->
+    <script src="vendor/wow/wow.min.js"></script>
+	<!-- Custom JS -->
+    <script src="js/custom.js"></script>
+</body>
+</html>
