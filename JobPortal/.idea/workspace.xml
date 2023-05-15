@@ -4,48 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c33438a1-e8f5-49ad-9bb4-8f0809cf1572" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/JobPortal/Configuration/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/JobPortal/Controllers/UserControllers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/JobPortal/Controllers/WebControllers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/JobPortal/CustomFilters/AuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/JobPortal/CustomFilters/AuthorizationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/JobPortal/Entities/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/JobPortal/Entities/LoginToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/JobPortal/Entities/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/JobPortal/Repositories/CompanyRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/JobPortal/Repositories/LoginTokenRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/JobPortal/Repositories/UsersRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/JobPortal/Services/UsersService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/signup1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Controllers/WebhookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Dto/CreatePaymentResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Entities/Locations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Entities/PickupDropoff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Repo/LocationsRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Repo/PickupDropoffRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Repo/RideDetailsRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Merge/src/main/resources/static/css/checkout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Merge/src/main/resources/static/js/checkout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Merge/src/main/resources/templatesMevron/checkout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Merge/src/main/resources/templatesMevron/map.html" afterDir="false" />
+    <list default="true" id="c33438a1-e8f5-49ad-9bb4-8f0809cf1572" name="Changes" comment="Added .gitignore file to exclude Downloads folder">
+      <change afterPath="$PROJECT_DIR$/../JobConnect/src/main/java/com/example/JobConnect/Repositories/UsersRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Controllers/MevronControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Controllers/MevronControllers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Controllers/PageControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Controllers/PageControllers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Controllers/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Controllers/PaymentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Dto/PaymentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Dto/CreatePaymentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Controllers/WebhookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Controllers/WebhookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Dto/CreatePaymentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Dto/CreatePaymentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Dto/CreatePaymentResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Dto/CreatePaymentResponseDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/DummySbrigitApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/DummySbrigitApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Entities/Admin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Entities/Drivers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Entities/Locations.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Entities/Locations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Entities/PickupDropoff.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Entities/PickupDropoff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Entities/RideDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Entities/RideDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Entities/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Filters/AuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Filters/AuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Repo/LocationsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Repo/LocationsRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Repo/PickupDropoffRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Repo/PickupDropoffRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Repo/RideDetailsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/java/com/example/dummySbrigit/Repo/RideDetailsRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Merge/src/main/resources/static/js/checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/resources/static/js/checkout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Merge/src/main/resources/templatesMevron/book-ride.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/resources/templatesMevron/book-ride.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Merge/src/main/resources/templatesMevron/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/resources/templatesMevron/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Merge/src/main/resources/templatesMevron/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/resources/templatesMevron/map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Merge/src/main/resources/templatesMevron/pick-drop.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge/src/main/resources/templatesMevron/pick-drop.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stripeIntro/src/main/java/com/example/stripeIntro/Controllers/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../stripeIntro/src/main/java/com/example/stripeIntro/Controllers/PaymentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stripeIntro/src/main/java/com/example/stripeIntro/Controllers/WebhookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../stripeIntro/src/main/java/com/example/stripeIntro/Controllers/WebhookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stripeIntro/src/main/java/com/example/stripeIntro/Dto/Server.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../stripeIntro/src/main/resources/static/checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/../stripeIntro/src/main/resources/static/checkout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +69,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/chicmic/Downloads/stripeIntro"
+    "last_opened_file_path": "/home/chicmic/Downloads/JobConnect"
   }
 }]]></component>
   <component name="RunManager">

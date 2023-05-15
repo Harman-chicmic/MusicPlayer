@@ -3,7 +3,9 @@ package com.example.stripeIntro.Controllers;
 import com.example.stripeIntro.Dto.CreatePaymentDto;
 import com.example.stripeIntro.Dto.CreatePaymentResponseDto;
 import com.stripe.exception.StripeException;
+import com.stripe.model.Customer;
 import com.stripe.model.PaymentIntent;
+import com.stripe.param.CustomerCreateParams;
 import com.stripe.param.PaymentIntentCreateParams;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +25,7 @@ public class PaymentController {
                 .setAmount(15* 100L)
                 .build();
         PaymentIntent intent = PaymentIntent.create(createParams);
+        CustomerCreateParams customerCreateParams=CustomerCreateParams.builder()
         return new CreatePaymentResponseDto(intent.getClientSecret());
     }
 

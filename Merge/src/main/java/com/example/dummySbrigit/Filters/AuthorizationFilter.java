@@ -22,29 +22,29 @@ public class AuthorizationFilter extends OncePerRequestFilter {
     private final AdminService adminService;
     private final DriversService driversService;
 
-    public AuthorizationFilter(AdminService adminService,DriversService driversService) {
+    public AuthorizationFilter(AdminService adminService, DriversService driversService) {
         this.adminService = adminService;
-        this.driversService=driversService;
+        this.driversService = driversService;
     }
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-log.info("\u001B[31m"+request.getServletPath()+"\u001B[0m");
-//            if(request.getServletPath().equals("/abc")||request.getServletPath().equals("/abcd")){
-//                System.out.println("authorization called.");
-//                  filterChain.doFilter(request, response);
-//           }
-//            else{
-//                String AuthorizationHeader = request.getHeader("Authorization");
-//                Uuid uuid= adminService.getToken(AuthorizationHeader.substring(7));
-//                Collection<SimpleGrantedAuthority> authorities = new ArrayList<>();
-//                UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken =
-//                        new UsernamePasswordAuthenticationToken(uuid.getEmail(), null, authorities);
-//
-//                SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
-                filterChain.doFilter(request, response);
-                return;
+        log.info("\u001B[31m" + request.getServletPath() + "\u001B[0m");
+        if (!request.getServletPath().equals("/abc") || !request.getServletPath().equals("/abcd")) {
+            System.out.println("authorization called.");
+            filterChain.doFilter(request, response);
+        } else {
+            String AuthorizationHeader = request.getHeader("Authorization");
+            Uuid uuid = adminService.getToken(AuthorizationHeader.substring(7));
+            Collection<SimpleGrantedAuthority> authorities = new ArrayList<>();
+            UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken =
+                    new UsernamePasswordAuthenticationToken(uuid.getEmail(), null, authorities);
+
+            SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
+            filterChain.doFilter(request, response);
+            return;
             //}
 
+        }
     }
 }

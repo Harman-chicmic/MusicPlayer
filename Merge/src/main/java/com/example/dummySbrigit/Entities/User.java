@@ -48,4 +48,6 @@ public class User {
 //    @Where(clause = "deleted = false And roleId.roleName != 'ADMIN'")
     @OneToMany(mappedBy="userId",fetch = FetchType.EAGER,cascade = CascadeType.REMOVE,orphanRemoval = true)
     private List<UserRole> userRoles;
+    @OneToMany(mappedBy="userId",fetch = FetchType.EAGER,cascade = CascadeType.REMOVE,orphanRemoval = true)
+    private List<UserRole> k;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,15 +47,15 @@
 		  
 		</header>
 		<!-- End Header -->
-		
+
 		<div class="map_location">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8070159.280816103!2d4.179722895373622!3d9.017386083643228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0baf7da48d0d%3A0x99a8fe4168c50bc8!2sNigeria!5e0!3m2!1sen!2sin!4v1568016470066!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>	
+			<iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=chicmic+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 		</div><!-- End map_location -->
 		
 		
 		<div class="layout_fixed">
 		
-			<form action="ride.html" class="book_ride">
+			<form action="/checkout" class="book_ride">
 			
 				<div class="d-flex flex-column bg-white book_div position-relative">
 					<div class="bg-light-grey book_header">
@@ -63,13 +63,15 @@
 							<figure class="justify-content-center d-flex mt-4">
 								<img src="img/car_pic.png" alt=""/>
 							</figure>
+							<th:block th:each="distance:${distance}">
 							<div class="d-flex justify-content-between my-3">
 								<h5>Mevron Go</h5>
-								<span>₦200 <i class="ml-1"><img src="img/fare_icon.png" alt=""></i></span>
+								<span th:value="${distance}" th:text="${distance}*10+50"><i class="ml-1"><img src="img/fare_icon.png" alt=""></i></span>
 							</div>
+							</th:block>
 							<span class="info_ride">
-								In 5 mins. 2:35 drop-off <br/> 
-								4 seats. Affordable, compact ruides						
+<!--								In 5 mins. 2:35 drop-off <br/> -->
+								4 seats. Affordable, compact rides
 							</span>
 						</div>
 							
@@ -80,20 +82,20 @@
 							<table class="table-border">
 								<tr>
 									<th>Base fare</th>
-									<td>₦200</td>
+									<td>50</td>
 								</tr>
-								<tr>
-									<th>Per minute</th>
-									<td>₦5.5</td>
-								</tr>
+<!--								<tr>-->
+<!--									<th>Per minute</th>-->
+<!--									<td>₦5.5</td>-->
+<!--								</tr>-->
 								<tr>
 									<th>Per Km</th>
-									<td>₦55</td>
+									<td>10</td>
 								</tr>
-								<tr>
-									<th>Tip</th>
-									<td>₦0%+Tip of <br/>5% Max</td>
-								</tr>							
+<!--								<tr>-->
+<!--									<th>Tip</th>-->
+<!--									<td>₦0%+Tip of <br/>5% Max</td>-->
+<!--								</tr>							-->
 							</table>
 							
 							<div class="d-flex justify-content-between payment_type" data-toggle="modal" data-target="#payment_type">
@@ -101,17 +103,17 @@
 								<span class=""><img src="img/dropdown_arrow.png" alt=""></span>
 							</div>
 							
-							<div class="add_promo position-relative my-3">
-								<input type="text" class="form-control" id="coupon_code" placeholder="Add Promocode" name="coupon_code">
-								<label for="promo_code">Apply</label>
-							</div>
+<!--							<div class="add_promo position-relative my-3">-->
+<!--								<input type="text" class="form-control" id="coupon_code" placeholder="Add Promocode" name="coupon_code">-->
+<!--								<label for="promo_code">Apply</label>-->
+<!--							</div>-->
 							<!-- End Promocode -->
 						</div>	
 						
 					</div>
 					<!-- Start Book Ride -->
 					<div class="p-4 book_request text-center">
-						<button type="submit" class="btn btn-lg btn-primary w-100">Request Mevron GO</button>
+						<a href="/checkout"><button type="submit" class="btn btn-lg btn-primary w-100" >Request Mevron GO</button></a>
 					</div>
 					
 				</div>

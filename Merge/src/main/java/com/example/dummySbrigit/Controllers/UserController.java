@@ -91,7 +91,6 @@ public class UserController {
             System.out.println("\u001B[33m" + path + "\u001B[0m" );
             Files.write(path, bytes);
 
-
         }
         System.out.println("inside////////////" + firstName + lastName + email + phone);
         User admin= adminService.UpdateAdminInUser(firstName,lastName,email,phone,country,"/assets/img/"+file.getOriginalFilename());;
@@ -101,14 +100,7 @@ public class UserController {
 
         return "myProfile";
     }
-//    @PostMapping("/updateProfile")
-//    public String updateProfile(Admin admin){
-//        System.out.println("hhhhhhhhhhhhh " +admin);
-////        adminService.saveAdmin(admin);
-//        Admin admin1 = adminService.getAdmin(admin.getEmail());
-//        adminService.UpdateAdminInUser(admin,(long)admin1.getId());
-//        return "myProfile";
-//    }
+
     @GetMapping("/addDriver")
     public String addDriver(){
         return "addDriver";

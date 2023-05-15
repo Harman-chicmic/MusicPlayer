@@ -1,2 +1,10 @@
-package com.example.dummySbrigit.Dto;public class CreatePaymentResponseDto {
+package com.example.dummySbrigit.Dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class CreatePaymentResponseDto {
+    private String clientSecret;
 }
