@@ -25,7 +25,7 @@ public class PaymentController {
                 .setAmount(15* 100L)
                 .build();
         PaymentIntent intent = PaymentIntent.create(createParams);
-        CustomerCreateParams customerCreateParams=CustomerCreateParams.builder()
+        CustomerCreateParams customerCreateParams=CustomerCreateParams.builder().build();
         return new CreatePaymentResponseDto(intent.getClientSecret());
     }
 

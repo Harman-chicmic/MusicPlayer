@@ -70,34 +70,20 @@ public class UserController {
         String email = request.getParameter("email");
         String phone = (request.getParameter("phone"));
         String country = request.getParameter("country");
-        //String imgUrl = request.getParameter("imgUrl");
-//        if(!confirmPassword.equals(password)) {
-//            System.out.println("//////////////////" + "inside");
-//            return "error";
-//        }
-
         if(file.isEmpty()){
-
         }
         else{
-//            admin.setImgUrl(file.getOriginalFilename());
-//            File saveFile = new ClassPathResource("home/chicmic/Downloads/classupload").getFile();
-//            Path path=Paths.get(saveFile.getAbsolutePath()+File.separator+file.getOriginalFilename());
-//            Files.copy(file.getInputStream(),path, StandardCopyOption.REPLACE_EXISTING);
             String folder = imagePath;
             System.out.println(imagePath);
             byte[] bytes = file.getBytes();
             Path path = Paths.get(folder +  file.getOriginalFilename());
             System.out.println("\u001B[33m" + path + "\u001B[0m" );
             Files.write(path, bytes);
-
         }
         System.out.println("inside////////////" + firstName + lastName + email + phone);
         User admin= adminService.UpdateAdminInUser(firstName,lastName,email,phone,country,"/assets/img/"+file.getOriginalFilename());;
         System.out.println(admin);
         model.addAttribute("imgUrl","/assets/img/"+file.getOriginalFilename());
-
-
         return "myProfile";
     }
 
